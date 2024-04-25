@@ -1,13 +1,172 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
-
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 4</title>
+        <style>
+            body{
+                width: 980px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            h1{
+                margin: 0;
+                background-color: black;
+                color: white;
+            }
+            h3{
+                margin: 0;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: gray;
+                margin: 0;
+            }
+            li{
+                float: left;
+                margin: 0;
+            }
+            li a{
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                margin: 0;
+            }
+            section{
+                margin: 0;
+                background-color: gainsboro;
+            }
+            article .left{
+                float: left;
+                text-align: center;
+                width: 300px;
+                height: 620px;
+                background-color: white;
+            }
+            table{
+                border-top: 1px solid gainsboro;
+                border-right: 1px solid gainsboro;
+                border-left: 1px solid gainsboro;
+                display: inline-block
+            }
+            tr, td{
+                border: 1px
+            }
+            tr .category{
+                width: 60px;
+                height: 30px;
+                background: gainsboro;
+                font-weight: bold;
+                
+            }
+            tr .content{
+                width: 150px;
+                height: 30px;
+                border-bottom: 1px solid gainsboro
+            }
+            hr{
+                margin: 0;
+            }
+            div .box{
+                width: 200px;
+                height: 200px;
+                border: 3px solid black;
+                display: inline-block;
+                margin: 5px;
+                background-color: white;
+                overflow: hidden;
+            }
+            footer{
+                clear: left;
+            }
+            section .img_width250{
+                width: 250px;
+            }
+            section .img_width200{
+                width: 200px;
+            }
+            section .img_width100{
+                width: 100px;
+            }
+        </style>
+    </head>
     <body>
-        <h1>git Project 예제</h1>
-        <h1>develop branch에서 추가한 내용</h1>
-        <h1>pro branch에서 추가한 내용</h1>
-        <h1>main branch protection 설정</h1>
-        <h1>protection된 main branch에 추가</h1>
-
-        <h1>function a에서 추가</h1>
+        <header id="home">
+            <h1>이준호의 홈페이지</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <article>
+            <section id="profile" class="left">
+                <h2>32193523 이준호</h2>
+                <img src="images/leejunho.webp" alt="사진" class="img_width250">
+                <table>
+                    <tr>
+                        <td class="category">이름</td><td class="content">이준호</td>
+                    </tr>
+                    <tr>
+                        <td class="category">학번</td><td class="content">32193523</td>
+                    </tr>
+                    <tr>
+                        <td class="category">학과</td><td class="content">사이버보안학과</td>
+                    </tr>
+                    <tr>
+                        <td  class="category">학년</td><td class="content">4학년</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="education">
+                <br>
+                <h3>Education</h3>
+                <br>
+                2024 웹프로그래밍
+                <br>
+                <br>
+            </section>
+            <hr>
+            <section id="skills">
+                <br>
+                <h3>Skills</h3>
+                <br>
+                <div>
+                    <div class="box">
+                        <br><br>
+                        <img src="images/c++.svg" alt="c++" class="img_width100">
+                    </div>
+                    <div class="box">
+                        <img src="images/java.svg" alt="java" class="img_width100">
+                    </div>
+                    <div class="box">
+                        <br><br>
+                        <img src="images/csharp.svg" alt="c#" class="img_width100">
+                    </div>
+                    <div class="box">
+                        <br><br>
+                        <img src="images/python.png" alt="python" class="img_width200">
+                    </div>
+                    <div class="box">
+                        <br><br>
+                        <img src="images/js.webp" alt="js" class="img_width200">
+                    </div>
+                    <div class="box">
+                        <br><br>
+                        <img src="images/react.png" alt="react" class="img_width100">
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer id="contact">
+            <i>Copyright ⓒ 2024 Junho Lee</i>
+        </footer>
     </body>
 </html>
